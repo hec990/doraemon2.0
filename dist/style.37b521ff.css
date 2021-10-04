@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.code-box {
+    height: 46vh;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.page-box {
+    flex: 1;
+    height: 60vh;
+    border: 1px solid black;
+}
+
+#code {
+    overflow: hidden;
+    height: 40vh;
+    position: relative;
+}
+
+
+/* 按钮区域 */
+
+.button {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+.button .slow {
+    margin-top: 15px;
+}
+
+.button .middle {
+    margin-top: 15px;
+}
+
+.button .fast {
+    margin-top: 15px;
+}
