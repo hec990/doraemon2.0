@@ -53,10 +53,18 @@ body {
 
 .button div {
     margin-top: 15px;
-    border: 1px solid black;
-    padding: 4px;
+    /* border: 1px solid black; */
+    border: 1px solid #1B94DD;
+    padding: 8px;
     text-align: center;
     font-size: 14px;
+    background-color: #ecf5ff;
+    color: black;
+    border-radius: 5px;
+}
+
+.button div:hover {
+    background-color: #1B94DD;
 }
 
 .button div.active {
