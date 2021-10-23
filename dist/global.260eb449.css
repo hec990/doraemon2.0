@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1B94DD;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.code-box {
+    height: 46vh;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.page-box {
+    flex: 1;
+    height: 60vh;
+    border: 1px solid black;
+}
+
+#code {
+    overflow: hidden;
+    height: 40vh;
+    position: relative;
+}
+
+
+/* 按钮区域 */
+
+.button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button div {
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    border: 1px solid #1B94DD;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #ecf5ff;
+    color: black;
+    border-radius: 5px;
+}
+
+.button div:hover {
+    background-color: #1B94DD;
+}
+
+.button div.active {
+    transform: scale(1.1);
+    background-color: #1B94DD;
+}
+
+
+
+
+
