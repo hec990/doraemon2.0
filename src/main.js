@@ -418,6 +418,7 @@ let code = `
     position: relative;
     top: 35px;
     left: 11px;
+    border:2px solid black;
 }
 
 .hand>.hand_right {
