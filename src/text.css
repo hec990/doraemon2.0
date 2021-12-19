@@ -1,34 +1,4 @@
-import './style.scss'
-
-let container = document.querySelector("#code")
-let n = 0;
-let string2 = "";
-let time = 30;
-
-let step = () => {
-    setTimeout(() => {
-      if(string[n] === '\n'){
-        string2 += "<br>";
-      }else if(string[n] === " "){
-        string2 += "&nbsp;";
-      }else{
-        string2 += string[n];
-      }
-      container.innerHTML = string.substring(0, n)
-      styleTag.innerHTML = string.substring(0, n)
-      container.scrollTop = container.scrollHeight
-      if (n < string.length - 1) {
-        // 如果 n 不是最后一个,就继续
-        n += 1;
-        step();
-      }
-    }, time);
-  };
-
-  step()
-
-const string = ` 
-.box {
+ .box {
     display: flex;
     justify-content: center;
 }
@@ -499,18 +469,3 @@ const string = `
     left: 245px;
     transform: rotate(116deg);
 }
-`
-
-// 加速 + 选中状态
-$(".button").on("click", 'div', e => {
-    let $div = $(e.target)
-    let index = $div.index()
-    if(index === 0){
-        time = 30;
-    }else if(index === 1){
-        time = 15;
-    }else if(index === 2){
-        time = 0;
-    }
-    $div.addClass('active').siblings().removeClass("active");
-})
